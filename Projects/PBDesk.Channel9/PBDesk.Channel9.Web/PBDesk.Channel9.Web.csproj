@@ -201,6 +201,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -221,13 +222,14 @@
     <Content Include="css\flexslider.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\green.css" />
+    <Content Include="css\mycustom.css" />
     <Content Include="css\prettyPhoto.css" />
     <Content Include="css\red.css" />
     <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="ApplicationInsights.config" />
+    <Content Include="ngApps\angular-cache\angular-cache.min.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="img\arrow-down.png" />
     <Content Include="img\arrow-right.png" />
@@ -347,7 +349,20 @@
     <Content Include="js\isotope.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\mycustom.js" />
     <Content Include="js\respond.min.js" />
+    <Content Include="ngApps\angular-cache\angular-cache.js" />
+    <Content Include="ngApps\angular-cache\angular-cache.min.js" />
+    <Content Include="ngApps\blocks\exception\exception-handler.provider.js" />
+    <Content Include="ngApps\blocks\exception\exception.js" />
+    <Content Include="ngApps\blocks\exception\exception.module.js" />
+    <Content Include="ngApps\blocks\logger\logger.js" />
+    <Content Include="ngApps\blocks\logger\logger.module.js" />
+    <Content Include="ngApps\blocks\router\routehelper.js" />
+    <Content Include="ngApps\blocks\router\router.module.js" />
+    <Content Include="ngApps\core\PBDesk.C9App.core.module.js" />
+    <Content Include="ngApps\GoogleFeeds\GoogleFeeds.module.js" />
+    <Content Include="ngApps\GoogleFeeds\GoogleFeedsFactory.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -394,12 +409,19 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\Header.cshtml" />
+    <Content Include="Views\Shared\Footer.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ngApps\Admin\" />
+    <Folder Include="ngApps\Visitor\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
