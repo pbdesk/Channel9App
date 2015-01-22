@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Your description">
+	<meta name="keywords" content="Your,Keywords">
+	<meta name="author" content="">
+
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    
+	<!-- Stylesheets -->
+	<!-- Bootstrap CSS -->
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font awesome CSS -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+
+	<!-- Menu Drop Down Plug-in -->
+	<link href="/css/ddlevelsmenu-base.css" rel="stylesheet">
+	<link href="/css/ddlevelsmenu-topbar.css" rel="stylesheet">
+	<!-- Flex Slider CSS -->
+	<link href="/css/flexslider.css" rel="stylesheet">
+	<!-- Pretty Photo CSS -->
+	<link href="/css/prettyPhoto.css" rel="stylesheet">
+	
+	<!-- Change the template color below. Supported colors blue,red and green. -->
+	<link href="/css/blue.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/css/mycustom.css" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+
+    <script type="text/javascript">
+        var appInsights=window.appInsights||function(config){
+            function s(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},r=document,f=window,e="script",o=r.createElement(e),i,u;for(o.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",r.getElementsByTagName(e)[0].parentNode.appendChild(o),t.cookie=r.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)s("track"+i.pop());return config.disableExceptionTracking||(i="onerror",s("_"+i),u=f[i],f[i]=function(config,r,f,e,o){var s=u&&u(config,r,f,e,o);return s!==!0&&t["_"+i](config,r,f,e,o),s}),t
+        }({
+            instrumentationKey:"e4b047fa-48f6-4d46-a2a0-8b614f8f9ce2"
+        });
+        
+        window.appInsights=appInsights;
+        appInsights.trackPageView();
+    </script>
+</head>
+<body>
+	@*<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>@Html.ActionLink("Home", "Index", "Home")</li>
+					<li>@Html.ActionLink("About", "About", "Home")</li>
+					<li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+				</ul>
+				@Html.Partial("_LoginPartial")
+			</div>
+		</div>
+	</div>*@
+	@*<div class="container body-content">
+		<hr />
+		@RenderBody()
+		<hr />
+	</div>*@
+
+	@Html.Partial("Header")
+	
+	<div class="main">
+		<div class="container">
+			@RenderBody()
+			
+		</div>
+	</div>
+	@Html.Partial("Footer")
+	
+
+	
+
+				<!-- Scroll to top -->
+				<span class="totop"><a href="#"><i class="fa fa-angle-up"></i></a></span>
+
+				<!-- JavaScript files -->
+				<!-- jQuery -->
+				<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+				<!-- Bootstrap JS -->
+				<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+				<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+				<!-- Easing JS -->
+				<script src="/js/easing.js"></script>
+				<!-- Drop Down Menu Plug-in JS -->
+				<script src="/js/ddlevelsmenu.js"></script>
+				<!-- Flex Slider JS -->
+				<script src="/js/flexslider.js"></script>
+				<!-- Pretty Photo, Isotope JS -->
+				<script src="/js/jquery.prettyPhoto.js"></script>
+				<script src="/js/isotope.js"></script>
+				<!-- Respond JS for IE8 -->
+				<script src="/js/respond.min.js"></script>
+				<!-- HTML5 Support for IE -->
+				<script src="/js/html5shiv.js"></script>
+				<!-- Custom JS -->
+				<script src="/js/custom.js"></script>
+				<script src="/js/mycustom.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular-animate.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular-route.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular-sanitize.min.js"></script>
+
+	<script src="~/ngApps/blocks/logger/logger.module.js"></script>
+	<script src="~/ngApps/blocks/logger/logger.js"></script>
+
+	<script src="~/ngApps/blocks/exception/exception.module.js"></script>
+	<script src="~/ngApps/blocks/exception/exception.js"></script>
+	<script src="~/ngApps/blocks/exception/exception-handler.provider.js"></script>
+
+	<script src="~/ngApps/blocks/router/router.module.js"></script>
+	<script src="~/ngApps/blocks/router/routehelper.js"></script>
+
+	<script src="~/ngApps/GoogleFeeds/GoogleFeeds.module.js"></script>
+	<script src="~/ngApps/GoogleFeeds/GoogleFeedsFactory.js"></script>
+
+	<script src="~/ngApps/angular-cache/angular-cache.min.js"></script>
+
+	<script src="~/ngApps/core/PBDesk.C9App.core.module.js"></script>
+
+				@RenderSection("scripts", required: false)
+</body>
+</html>
